@@ -6,7 +6,7 @@ settings:
 
 patchedDependencies:
   stremio-addon-sdk@1.6.10:
-    hash: xstlfg2vnbadlx4smrydfd2t4e
+    hash: ac453b7f48cf25588657de02271ba3c739e35c6fc1a4b9274002881d776082fb
     path: patches/stremio-addon-sdk@1.6.10.patch
 
 importers:
