@@ -6,7 +6,7 @@ import { Server } from "http";
 
 export const serveHTTP = async (port: number) => {
   const builder = new stremio.addonBuilder(manifest);
-
+  
   // @ts-ignore
   builder.defineStreamHandler(streamHandler);
   const addonInterface = builder.getInterface();
