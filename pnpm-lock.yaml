@@ -76,7 +76,7 @@ importers:
         version: 2.0.4
       '@types/node':
         specifier: ^20.11.20
-        version: 20.12.5
+        version: 20.17.30
       '@types/stremio-addon-sdk':
         specifier: ^1.6.11
         version: 1.6.11
@@ -280,8 +280,8 @@ packages:
   '@types/mime@1.3.5':
     resolution: {integrity: sha512-/pyBZWSLD2n0dcHE3hq8s8ZvcETHtEuF+3E7XVt0Ig2nvsVQXdghHVcEkIWjy9A0wKfTn97a/PSDYohKIlnP/w==}
 
-  '@types/node@20.12.5':
-    resolution: {integrity: sha512-BD+BjQ9LS/D8ST9p5uqBxghlN+S42iuNxjsUGjeZobe/ciXzk2qb1B6IXc6AnRLS+yFJRpN2IPEHMzwspfDJNw==}
+  '@types/node@20.17.30':
+    resolution: {integrity: sha512-7zf4YyHA+jvBNfVrk2Gtvs6x7E8V+YDW05bNfG2XkWDJfYRXrTiP/DsB2zSYTaHX0bGIujTBQdMVAhb+j7mwpg==}
 
   '@types/parse-torrent-file@4.0.6':
     resolution: {integrity: sha512-SxqVth0Iv0WuEkqWS5MaY4S4Tlyi+QHkElQREvsUPw2xHcPgKyQ2dkJRRv5vAxmLzH+tnMdOj1Nws/wsenbzUw==}
@@ -1539,8 +1539,8 @@ packages:
   uint8-util@2.2.5:
     resolution: {integrity: sha512-/QxVQD7CttWpVUKVPz9znO+3Dd4BdTSnFQ7pv/4drVhC9m4BaL2LFHTkJn6EsYoxT79VDq/2Gg8L0H22PrzyMw==}
 
-  undici-types@5.26.5:
-    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
+  undici-types@6.19.8:
+    resolution: {integrity: sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==}
 
   universalify@0.2.0:
     resolution: {integrity: sha512-CJ1QgKmNg3CwvAv/kOFmtnEN05f0D/cn9QntgNOQlQF9dgvVTHj3t+8JPdjqawCHk7V/KA+fbUqzZ9XWhcqPUg==}
@@ -1770,22 +1770,22 @@ snapshots:
 
   '@types/bittorrent-protocol@3.1.6':
     dependencies:
-      '@types/node': 20.12.5
+      '@types/node': 20.17.30
 
   '@types/body-parser@1.19.5':
     dependencies:
       '@types/connect': 3.4.38
-      '@types/node': 20.12.5
+      '@types/node': 20.17.30
 
   '@types/bytes@3.1.4': {}
 
   '@types/connect@3.4.38':
     dependencies:
-      '@types/node': 20.12.5
+      '@types/node': 20.17.30
 
   '@types/express-serve-static-core@4.19.0':
     dependencies:
-      '@types/node': 20.12.5
+      '@types/node': 20.17.30
       '@types/qs': 6.9.14
       '@types/range-parser': 1.2.7
       '@types/send': 0.17.4
@@ -1800,36 +1800,36 @@ snapshots:
   '@types/fs-extra@11.0.4':
     dependencies:
       '@types/jsonfile': 6.1.4
-      '@types/node': 20.12.5
+      '@types/node': 20.17.30
 
   '@types/http-errors@2.0.4': {}
 
   '@types/jsonfile@6.1.4':
     dependencies:
-      '@types/node': 20.12.5
+      '@types/node': 20.17.30
 
   '@types/localtunnel@2.0.4':
     dependencies:
-      '@types/node': 20.12.5
+      '@types/node': 20.17.30
 
   '@types/magnet-uri@5.1.5':
     dependencies:
-      '@types/node': 20.12.5
+      '@types/node': 20.17.30
 
   '@types/mime@1.3.5': {}
 
-  '@types/node@20.12.5':
+  '@types/node@20.17.30':
     dependencies:
-      undici-types: 5.26.5
+      undici-types: 6.19.8
 
   '@types/parse-torrent-file@4.0.6':
     dependencies:
-      '@types/node': 20.12.5
+      '@types/node': 20.17.30
 
   '@types/parse-torrent@5.8.7':
     dependencies:
       '@types/magnet-uri': 5.1.5
-      '@types/node': 20.12.5
+      '@types/node': 20.17.30
       '@types/parse-torrent-file': 4.0.6
 
   '@types/qs@6.9.14': {}
@@ -1839,17 +1839,17 @@ snapshots:
   '@types/send@0.17.4':
     dependencies:
       '@types/mime': 1.3.5
-      '@types/node': 20.12.5
+      '@types/node': 20.17.30
 
   '@types/serve-static@1.15.7':
     dependencies:
       '@types/http-errors': 2.0.4
-      '@types/node': 20.12.5
+      '@types/node': 20.17.30
       '@types/send': 0.17.4
 
   '@types/simple-peer@9.11.8':
     dependencies:
-      '@types/node': 20.12.5
+      '@types/node': 20.17.30
 
   '@types/stremio-addon-sdk@1.6.11': {}
 
@@ -1858,7 +1858,7 @@ snapshots:
   '@types/webtorrent@0.109.8':
     dependencies:
       '@types/bittorrent-protocol': 3.1.6
-      '@types/node': 20.12.5
+      '@types/node': 20.17.30
       '@types/parse-torrent': 5.8.7
       '@types/simple-peer': 9.11.8
 
@@ -3245,7 +3245,7 @@ snapshots:
     dependencies:
       base64-arraybuffer: 1.0.2
 
-  undici-types@5.26.5: {}
+  undici-types@6.19.8: {}
 
   universalify@0.2.0: {}
 
