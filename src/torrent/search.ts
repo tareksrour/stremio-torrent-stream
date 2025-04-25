@@ -18,7 +18,8 @@ export type TorrentSource =
   | "insane"
   | "itorrent"
   | "yts"
-  | "eztv";
+  | "eztv"
+  | "torrentio";
 
 export interface TorrentSearchOptions {
   categories?: TorrentCategory[];
