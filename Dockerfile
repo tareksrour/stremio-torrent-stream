@@ -10,11 +10,7 @@ WORKDIR /usr/src/app
 RUN npm install -g typescript@${TS_VERSION}
 RUN --mount=type=cache,target=/root/.npm \
     npm install -g pnpm@${PNPM_VERSION}
-# # add cache to apt
-# RUN --mount=type=cache,target=/var/cache/apt \
-#     --mount=type=cache,target=/var/lib/apt \
-#     apt update && \
-#     apt install -y build-essential python3 make g++ cmake
+    
 RUN --mount=type=bind,source=package.json,target=package.json \
     --mount=type=bind,source=pnpm-lock.yaml,target=pnpm-lock.yaml \
     --mount=type=bind,source=patches,target=patches \
