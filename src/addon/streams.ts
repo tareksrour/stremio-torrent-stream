@@ -6,6 +6,7 @@ import {
   TorrentSource,
   searchTorrents,
 } from "../torrent/search.js";
+import { searchTorrentio } from "../torrent/torrentio.js";
 import { getTorrentInfo } from "../torrent/webtorrent.js";
 import { getReadableSize, isSubtitleFile, isVideoFile } from "../utils/file.js";
 import { getTitles } from "../utils/imdb.js";
@@ -47,6 +48,7 @@ export const streamHandler = async ({ type, id, config, req }: HandlerArgs) => {
   if (type === "series") categories.push("show");
 
   const sources: TorrentSource[] = [];
+  sources.push("torrentio"); // always include torrentapi as a source
   if (config.enableJackett === "on") sources.push("jackett");
   if (config.enableNcore === "on") sources.push("ncore");
   if (config.enableInsane === "on") sources.push("insane");
@@ -62,22 +64,7 @@ export const streamHandler = async ({ type, id, config, req }: HandlerArgs) => {
   torrents = (
     await Promise.all(
       queries.map((query) =>
-        searchTorrents(query, {
-          categories,
-          sources,
-          jackett: {
-            url: config.jackettUrl,
-            apiKey: config.jackettKey,
-          },
-          ncore: {
-            user: config.nCoreUser,
-            password: config.nCorePassword,
-          },
-          insane: {
-            user: config.insaneUser,
-            password: config.insanePassword,
-          },
-        })
+        searchTorrentio(id,type) // TODO: remove this cast
       )
     )
   ).flat();
